@@ -1,0 +1,1571 @@
+:root {
+    --nav-height: 4rem;
+    --dark-brown: #393029;
+    --light-beige: #E4D5C2;
+    --gold: #D9A441;
+    --light-beige-alpha: rgba(228, 213, 194, 0.8);
+    --green: #364032;
+    --dark-green: #151915;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Base typography & layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-beige);
+}
+
+/* only the Contact page gets this full-bleed hero background */
+body.contact-page {
+    background:
+            linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+            url("../images/leaves.jpg") center/cover fixed no-repeat;
+    background-color: var(--light-beige);
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+h1, h2, h3 {
+    color: var(--dark-brown);
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.7em; }
+h2 { font-size: 2em; margin-top: 1.5em; }
+h3 { font-size: 1.75em; margin-top: 1em; }
+
+p {
+    margin-bottom: 1em;
+}
+
+/* Global buttons */
+a.btn,
+button {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--dark-brown);
+    padding: 0.8em 1.5em;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+a.btn:hover,
+button:hover {
+    background-color: var(--dark-brown);
+    color: var(--light-beige-alpha);
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    height: var(--nav-height);
+    background-color: rgba(74, 46, 25, 0.4);
+    backdrop-filter: blur(5px);
+    z-index: 0;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+nav a {
+    display: block;
+    padding: 1em;
+    border-radius: 3rem;
+    color: var(--light-beige);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+}
+nav a:hover {
+    background-color: var(--gold);
+    color: var(--dark-brown);
+}
+
+#main-nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--nav-height);
+    background-color: rgba(74,46,25,0.4);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-top: calc(-1 * var(--nav-height));
+    width: 100%;
+    height: 95vh;
+    background-image: url("../images/amur.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+main,
+section {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    background-color: transparent;
+    padding: 1.5em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.3rem;
+}
+
+/* Hero heading wrapper: puts both H1 and H2 inside the same box */
+.hero-text .hero-heading {
+    display: inline-block;
+    background-color: rgba(53, 27, 16, 0.5);
+    padding: 0.75em 1em;
+    border-radius: 3rem;
+}
+
+/* Headings inside that box share the background and have no extra margins */
+.hero-text .hero-heading h1,
+.hero-text .hero-heading h2 {
+    margin: 0;
+    color: var(--light-beige-alpha);
+}
+
+/* Optional spacing and sizing for the subtitle */
+.hero-text .hero-heading h2 {
+    margin-top: 0.25em;
+    font-size: 1.5rem;
+}
+
+
+/* Hero “Learn More” */
+.hero-text .btn {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--dark-brown);
+    padding: 0.5em 1em;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Images, tables, lists, forms, etc. */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+table th,
+table td {
+    border: 1px solid var(--dark-brown);
+    padding: 0.5em;
+    text-align: left;
+}
+table th {
+    background-color: var(--light-beige-alpha);
+}
+
+ul ul {
+    margin-left: 1.5em;
+    list-style-type: disc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 1em 0;
+}
+form label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 0.5em;
+    border: 1px solid var(--light-beige-alpha);
+    border-radius: 3rem;
+    margin-bottom: 1em;
+    font-family: inherit;
+    font-size: 1em;
+}
+form button {
+    align-self: flex-start;
+}
+
+/* Accessibility focus */
+:focus {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .hero {
+        height: 50vh;
+        justify-content: center;
+        padding-left: 1em;
+    }
+    .hero-text {
+        padding: 1em;
+    }
+    .hero-text .btn {
+        margin-top: 0.75rem;
+    }
+}
+
+
+/* *********************************************************** */
+
+/* 1. Intro */
+.intro {
+    text-align: center;
+    border: 2px solid var(--dark-brown);
+    border-radius: 3rem;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2rem 1.5rem;
+}
+
+#intro h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: var(--dark-brown);
+}
+#intro p {
+    max-width: 800px;
+    margin: 0 auto 1.5em;
+    color: var(--dark-brown);
+}
+
+/* *********************************************************** */
+
+/* Highlights */
+#highlights {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 4rem 1rem;
+    box-sizing: border-box;
+    border: 4px solid var(--dark-brown);
+    background:
+            linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("../images/leaves.jpg") center/cover no-repeat;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+#highlights .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#highlights .section-title {
+    text-align: center;
+    color: var(--light-beige);
+    margin-bottom: 3rem;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2em;
+}
+
+.highlights-grid .card {
+    background: #E7D7C1;
+    box-shadow: none;
+    border: 3px solid var(--green);
+    border-radius: 3rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    z-index: 0;
+}
+
+.highlights-grid .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background-color: rgba(228,213,194,0.95);
+    z-index: 1;
+}
+
+.highlights-grid .card h3 {
+    margin-bottom: 0.5em;
+    color: var(--green);
+}
+
+.highlights-grid .card p {
+    margin-top: 2.5rem;
+    color: var(--dark-brown);
+    font-size: 1rem;
+}
+
+.highlights-grid .card .btn {
+}
+
+/* — Highlights cards should display titles and buttons normally — */
+#highlights .card {
+    position: static;
+    overflow: visible;
+}
+
+#highlights .card h3 {
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    background: none;
+    color: var(--green);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#highlights .card a.btn {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    align-self: center;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 3rem;
+}
+
+/*/* *********************************************************** */
+
+/* ─── Spotlight Gallery: full‐bleed 5-col grid ─── */
+#spotlight-gallery {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    /* your usual section padding & bg */
+    padding: 4rem 1rem;
+    background: var(--light-beige);
+    box-sizing: border-box;
+}
+
+/* drop the 1200px cap on the inner .container */
+#spotlight-gallery .container {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* make the grid fill all of that space */
+#spotlight-gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+}
+
+/* cards take 100% of each column */
+#spotlight-gallery .gallery-item {
+    overflow: hidden;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: var(--dark-brown);
+}
+
+/* make images bigger and fill their cell */
+#spotlight-gallery .gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 3rem;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+/* Zoom in when hovering over the card */
+#spotlight-gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* caption styling */
+#spotlight-gallery .gallery-item h3 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#spotlight-gallery .section-title {
+    display: block;
+    text-align: center;
+    margin: 0 auto 2rem;   /* auto left/right centers it, 2rem below */
+}
+
+/* responsive fallback */
+@media (max-width: 768px) {
+    #spotlight-gallery .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* *********************************************************** */
+
+/* 4. Newsletter */
+#newsletter {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 4rem 1rem;
+    box-sizing: border-box;
+    background:
+        linear-gradient(rgba(19, 0, 0, 0.4), rgba(0,0,0,0.8)),
+        url("../images/sleep.jpg") center/cover no-repeat;
+    background-position: center 30%;
+    border: 4px solid var(--dark-brown);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: var(--light-beige);
+}
+
+#newsletter .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+#newsletter .section-title {
+    margin-bottom: 1rem;
+    color: var(--light-beige);
+    font-size: 2em;
+    text-align: left;
+    margin-left: 0;
+}
+
+#newsletter .newsletter-text {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+    color: var(--light-beige-alpha);
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    max-width: 400px;
+    padding: 0.75em 1em;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    border-radius: 3rem;
+    border: none;
+}
+
+/* Stack the form on narrow screens */
+@media (max-width: 600px) {
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .newsletter-form input,
+    .newsletter-form button {
+        border-radius: 3rem;
+    }
+    .newsletter-form input {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* —— Site Footer —— */
+#site-footer {
+    background-color: var(--green);
+    color: var(--light-beige);
+    padding: 3rem 1rem 1rem;
+}
+
+#site-footer h3 {
+    color: var(--light-beige);
+}
+
+#site-footer h4 {
+    color: var(--dark-green);
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+#site-footer p {
+    color: var(--light-beige);
+}
+
+#site-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+/* three equal columns with gap */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+/* ensure cells have no extra background */
+.footer-brand,
+.footer-nav,
+.footer-social {
+    background: transparent;
+}
+
+/* Branding */
+.footer-brand h3 {
+    margin-bottom: 0.5rem;
+}
+.footer-brand p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Quick Links */
+.footer-nav h4 {
+    margin-bottom: 0.75rem;
+}
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-nav li {
+    margin-bottom: 0.5rem;
+}
+.footer-nav a {
+    color: var(--light-beige);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+.footer-nav a:hover {
+    color: var(--gold);
+}
+
+/* Social Links */
+.footer-social h4 {
+    margin-bottom: 0.75rem;
+}
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-social li {
+    margin-bottom: 0.5rem;
+}
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--light-beige);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-social a:hover {
+    color: var(--gold);
+}
+.footer-social img {
+    width: 1.3rem;
+    height: 1.2rem;
+    object-fit: contain;
+}
+
+/* Bottom copyright bar */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: 1px solid var(--dark-green);
+    padding-top: 1rem;
+    margin-top: 0;
+}
+
+/* —— Quick Links: match Social Links style —— */
+#site-footer .footer-nav ul {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#site-footer .footer-nav li {
+    margin: 0.25rem 0 !important;
+    list-style: none;
+}
+
+#site-footer .footer-nav a {
+    display: inline-block;
+    padding: 0;
+    line-height: 1.4;
+}
+
+#site-footer .footer-nav a:hover {
+    color: var(--gold);
+    background: none;
+    border: none;
+}
+
+/* Stack into one column on narrow screens */
+@media (max-width: 576px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-brand,
+    .footer-nav,
+    .footer-social {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* *********************************************************** */
+/* ***********************BIOLOGY PAGE************************ */
+
+/* ─── Full-width “bleed” wrapper ─── */
+#taxonomy-bleed {
+    width: 100vw;
+    position: relative;
+    left: 50%; margin-left: -50vw;
+    padding: 0.5rem 0;
+    background:
+            linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("../images/roar.jpg") center/cover no-repeat;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border: 4px solid var(--dark-brown);
+}
+
+.biology-intro {
+    border: none !important;
+}
+
+.biology-intro p {
+    color: var(--dark-brown);
+}
+
+#taxonomy-bleed .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.taxonomy-pyramid-card {
+    background: none;
+    backdrop-filter: none;
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+
+
+.taxonomy-pyramid-card h2 {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    color: var(--light-beige) !important;
+    font-size: 2rem;
+}
+
+/* ─── Pyramid levels ─── */
+.taxonomy-pyramid {
+    max-width: 600px;
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Each bar picks its width from --w */
+.pyramid-level {
+    width: var(--w);
+    max-width: 100%;
+    background-color: rgba(6, 14, 10, 0.2);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(115, 114, 114, 0.3);
+    border-radius: 1rem;
+    color: var(--light-beige);
+    text-align: center;
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    transition: transform 0.2s;
+}
+
+.pyramid-level:hover {
+    transform: translateY(-3px);
+}
+
+.pyramid-level em {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* *********************************************************** */
+
+/* ─── Two‐column container with rule ─── */
+.column-text {
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid var(--green);
+    column-fill: balance;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-size: 1.125rem;
+    color: var(--dark-brown);
+}
+
+/* Make the H2 and UL span both columns (full‐width) */
+.column-text > h2,
+.column-text > ul {
+    column-span: all;
+    break-inside: avoid;
+}
+
+.column-text h2 {
+    color: var(--green);
+}
+
+/* Prevent list items splitting across columns */
+.column-text > ul li {
+    break-inside: avoid-column;
+}
+
+/* ─── Figure with rounded corners ─── */
+#anatomy figure {
+    overflow: hidden;
+    border-radius: 1.2rem;
+    margin: 2rem auto;
+}
+#anatomy figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+#anatomy figure figcaption {
+    font-style: italic;
+    color: var(--green);
+}
+
+/* ─── Flex wrapper for image + features ─── */
+.anatomy-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.media-figure {
+    flex: 1 1 60%;
+}
+
+.media-features {
+    flex: 1 1 35%;
+}
+
+/* ─── Icon feature list ─── */
+.feature-list {
+    list-style: none;
+    margin-top: 5rem;
+    padding: 0;
+    display: grid;
+    gap: 2rem;
+}
+.feature {
+    position: relative;
+    padding-left: 3rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: var(--dark-brown);}
+.feature::before {
+    content: "";
+    position: absolute;
+    left: -0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.feature:hover::before {
+    transform: translateY(-50%) scale(1.1);
+    background-color: rgba(255, 255, 255, 0.35);
+    border-color: var(--green);
+}
+
+.feature--fur::before     { background-image: url("../images/fur.png"); }
+.feature--muscle::before  { background-image: url("../images/muscle.png"); }
+.feature--paws::before    { background-image: url("../images/paws.png"); }
+.feature--jaw::before     { background-image: url("../images/jaw.png"); }
+
+/* ─── Responsive adjustments ─── */
+@media (max-width: 768px) {
+    .anatomy-media {
+        flex-direction: column;
+    }
+    .feature {
+        padding-left: 2rem;
+    }
+    .feature::before {
+        width: 1.5rem;
+        height: 1.5rem;
+        left: -0.15rem;
+    }
+}
+
+/* *********************************************************** */
+
+/* ─── Statistics “Bleed” Section ─── */
+#statistics-bleed {
+    width: 100vw;
+    position: relative;
+    left: 50%; margin-left: -50vw;
+    padding: 3rem 0 3rem;
+    background:
+            linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("../images/leaves.jpg") center/cover no-repeat;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 4px solid var(--dark-brown);
+
+}
+
+#statistics-bleed .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#statistics-bleed .stats-card {
+    background-color: rgba(24, 34, 28, 0.9);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#statistics-bleed .stats-card h2 {
+    text-align: center;
+    color: var(--light-beige);
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+
+}
+
+/* ─── Table Text & Cell Background Overrides ─── */
+#statistics-bleed .stats-card #biology-table {
+    border: none;
+}
+
+#statistics-bleed .stats-card #biology-table th,
+#statistics-bleed .stats-card #biology-table td {
+    color: var(--light-beige);
+}
+
+#statistics-bleed .stats-card #biology-table thead th {
+    background-color: rgba(105, 120, 112, 0.3);
+    color: var(--light-beige);
+}
+
+#statistics-bleed .stats-card #biology-table tbody tr:nth-child(even) td {
+    background-color: rgba(105,120,112,0.3);
+}
+
+/* *********************************************************** */
+/* ************************THREATS PAGE*********************** */
+
+/* — Threats page: Card grid — */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+    align-items: start;
+}
+
+/* — Individual cards — */
+.card {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--light-beige-alpha);
+    border-radius: 2rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    padding: 0.8rem;
+    min-height: 350px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* — Card images — */
+.card img {
+    display: block;
+    width: calc(100% - 1.6rem);
+    height: 300px;
+    object-fit: cover;
+    border-radius: calc(2rem - 0.8rem);
+    margin: 0.8rem 0.8rem 0.8rem 0.8rem;
+    transition: transform 0.3s ease;
+}
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* — Overlay title on hover — */
+.card h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 1rem;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 1.25rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 2rem;
+}
+.card:hover h3 {
+    opacity: 1;
+}
+
+/* — Modals — */
+.modal {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    z-index: 99999;
+    padding-top: calc(var(--nav-height) + 1rem);
+    overflow: hidden;
+}
+.modal:target {
+    display: flex;
+}
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    text-indent: -9999px;
+    z-index: 1;
+}
+.modal-content {
+    position: relative;
+    z-index: 10000000000;
+    background: #E4D5C2;
+    padding: 1.5em 2em;
+    max-width: 800px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    max-height: calc(100vh - (var(--nav-height) + 2rem));
+    overflow-y: auto;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content p {
+    color: var(--dark-brown);
+}
+
+.modal-close,
+.close-btn {
+    position: absolute;
+    top: 0.5rem; right: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-decoration: none;
+    color: #E4D5C2;
+    background: var(--dark-brown);
+    padding: 0.25em 0.5em;
+    border-radius: 100%;
+    z-index: 10001;
+}
+
+.modal-close:hover,
+.close-btn:hover {
+    background: var(--gold);
+    color: var(--dark-brown);
+    cursor: pointer;
+}
+
+/* *********************************************************** */
+/* ************HEADER AND SUBHEADER FOR ALL PAGES************* */
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+    width: 100%;
+    margin: calc(var(--nav-height) + 2rem) auto 2rem !important;
+}
+
+.section-header > p {
+    color: var(--dark-brown) !important;
+}
+
+/* *********************************************************** */
+/* ******************CONTACT FORM***************************** */
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    max-width: 600px;
+    margin-bottom: 1.3rem;
+}
+
+#contact-form .container {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 1.8rem 1rem 1.5rem;
+    background: rgba(243, 236, 224, 0.8);
+    border-radius: 2.5rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-top: 0.6rem;
+    color: var(--green);
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    padding: 0.75em 1em;
+    border: 2px solid var(--green);
+    border-radius: 2.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: var(--gold);
+
+}
+
+#contact-form .btn {
+    border: none;
+    outline: none;
+    align-self: flex-end;
+    padding: 1rem 1rem;
+    background: var(--green);
+    color: var(--light-beige);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+#contact-form .btn:hover {
+    background: var(--gold);
+    color: var(--dark-brown);
+    cursor: pointer;
+}
+
+#contact-form .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+body.contact-page .section-header h1 {
+    color: var(--gold);
+}
+body.contact-page .section-header > p {
+    color: var(--light-beige) !important;
+}
+
+
+/* *********************************************************** */
+/* ******************CONSERVATION***************************** */
+
+.why-help {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--green);
+    border: 2px solid var(--green);
+    border-radius: 3rem;
+}
+.why-help blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+.why-help cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-style: normal;
+    color: var(--dark-green);
+}
+
+/* Conservation Highlights grid */
+.conservation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.conservation-grid .card {
+    background: var(--green);
+    border: 3px solid var(--green);
+    border-radius: 3rem;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.conservation-grid .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.conservation-grid .card img {
+    width: calc(100% - 2rem);
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+}
+
+.conservation-grid .card h3 {
+    margin: 0 0 0.5rem;
+    color: var(--light-beige);
+    font-size: 1.3rem;
+}
+
+.conservation-grid .card p {
+    margin: 0 0 1rem;
+    color: var(--light-beige-alpha);
+    flex: 1;
+}
+
+#volunteer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    max-width: 600px;
+    margin-top: 1.5rem;
+}
+
+#volunteer-form label {
+    color: var(--dark-brown);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+#volunteer-form input,
+#volunteer-form textarea {
+    margin: 0;
+    padding: 0.75em 1em;
+    border: 1px solid var(--light-beige-alpha);
+    border-radius: 3rem;
+}
+
+#volunteer-form button {
+    border: none;
+    margin: 1rem 0 1em;
+    padding: 0.8rem 1.5em;
+}
+
+.amounts {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+.amounts label {
+    background: var(--gold);
+    color: var(--dark-brown);
+    padding: 0.5em 1em;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.amounts label:hover {
+    background: var(--dark-brown);
+    color: var(--light-beige);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.amounts input[type="radio"] {
+    display: none;
+}
+
+.amounts input[type="radio"]:checked + span,
+.amounts input[type="radio"]:checked + label {
+    background: var(--dark-brown);
+    color: var(--light-beige);
+}
+
+#sponsor-other {
+    max-width: 200px;
+    padding: 0.75em 1em;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+}
+
+#sponsor-form button.btn {
+    border: none;
+    outline: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container h2 {
+    color: var(--green);
+}
+.container p {
+    color: var(--dark-brown);
+}
+
+#volunteer {
+    margin-bottom: 5rem;
+}
+
+#sponsor-bleed {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    padding: 2.5rem 1rem;
+    box-sizing: border-box;
+    background:
+            linear-gradient(rgba(53,27,16,0.7), rgba(53,27,16,0.3)),
+            url("../images/leaves.jpg") center/cover no-repeat;
+    border: 4px solid var(--dark-brown);
+    color: var(--light-beige);
+    text-align: center;
+}
+
+#sponsor-bleed .container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#sponsor-form {
+    background: rgba(228,213,194,0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 1.5rem;
+    padding: 2.5rem 3rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+#sponsor-bleed h2 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--gold);
+}
+#sponsor-bleed p {
+    margin-top: 0;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    color: var(--light-beige);
+}
+
+#sponsor-form .amounts {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sponsor-form .amounts label {
+    background: var(--gold);
+    color: var(--dark-brown);
+    padding: 0.6em 1.2em;
+    border-radius: 2rem;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+#sponsor-form .amounts label:hover {
+    background: var(--dark-brown);
+    color: var(--light-beige);
+}
+
+#sponsor-form input[type="radio"] {
+    display: none;
+}
+
+#sponsor-other {
+    max-width: 200px;
+    padding: 0.75em 1em;
+    border-radius: 3rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sponsor-form button.btn {
+    border: none;
+    outline: none;
+    align-self: center;
+    padding: 0.8em 1.5em;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    background: var(--gold);
+    color: var(--dark-brown);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+#sponsor-form button.btn:hover {
+    background: var(--dark-brown);
+    color: var(--light-beige);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* Anchor‐offset to always land below the nav */
+article[id] {
+    padding-top: calc(var(--nav-height));
+    margin-top: calc(-1 * (var(--nav-height) + 1rem));
+}
+
+.social-share {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-share a {
+    background: var(--green);
+    color: var(--light-beige);
+    padding: 0.75em 1.5em;
+    border-radius: 3rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.social-share a:hover {
+    background: var(--gold);
+    color: var(--dark-brown);
+}
+
+#advocate {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+#advocate h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+#advocate p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#advocate .social-share {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem auto;
+}
+
+#advocate .social-share a {
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    border-radius: 3rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* — Hide the checkbox — */
+.nav-toggle {
+    display: none;
+}
+
+/* — Hamburger icon (hidden on desktop) — */
+.nav-toggle-label {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index: 20; /* above nav */
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    display: block;
+    background: var(--light-beige);
+    height: 3px;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.nav-toggle-label span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-toggle-label span::before {
+    top: -0.6rem;
+}
+.nav-toggle-label span::after {
+    bottom: -0.6rem;
+}
+
+/* — Mobile styles — */
+@media (max-width: 768px) {
+    /* show hamburger */
+    .nav-toggle-label {
+        display: block;
+    }
+
+    /* hide the menu by default */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: rgba(74,46,25,0.9);
+        position: absolute;
+        top: var(--nav-height);
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    /* show menu when checkbox is checked */
+    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+        display: flex;
+    }
+
+    /* Animate icon to “X” */
+    .nav-toggle:checked + .nav-toggle-label span {
+        background: transparent;
+    }
+    .nav-toggle:checked + .nav-toggle-label span::before {
+        transform: translateY(0.6rem) rotate(45deg);
+    }
+    .nav-toggle:checked + .nav-toggle-label span::after {
+        transform: translateY(-0.6rem) rotate(-45deg);
+    }
+}

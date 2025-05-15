@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="83547ce9-e834-460d-a4ae-c5b874dcf9d0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/amur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/anatomy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/attack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/breeding.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/chill.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/climate-change.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/community.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cub.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/disease.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/face.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/family.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/front.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/fur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/habitat-loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/inbreeding.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jaw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/leaves.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/muscle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/partnerships.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/paws.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/poaching.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/policy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/prey-depletion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/restoration.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/roar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/save.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sleep.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/snow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/volunteer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/winter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/biology.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/conservation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/get-involved.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/threats.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2x2GnThsgqm7gi3OgeooOeQce2c" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83547ce9-e834-460d-a4ae-c5b874dcf9d0" name="Changes" comment="" />
+      <created>1747128922278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747128922278</updated>
+      <workItem from="1747128923314" duration="81230000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

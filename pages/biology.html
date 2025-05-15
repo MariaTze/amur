@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biology - Amur Leopard Conservation</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Internal CSS table styling and form layout-->
+    <style>
+        /* Internal CSS:  */
+        #biology-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        #biology-table th,
+        #biology-table td {
+            border: 1px solid #ccc;
+            padding: 0.5em;
+            text-align: left;
+        }
+        #question-form {
+            margin: 2em 0;
+            display: flex;
+            flex-direction: column;
+        }
+        #question-form label {
+            margin-bottom: 0.5em;
+        }
+        #question-form input,
+        #question-form textarea {
+            padding: 0.5em;
+            font-size: 1em;
+            margin-bottom: 1em;
+            max-width: 400px;
+        }
+        .intro {
+            margin-top: calc(var(--nav-height) + 20px);
+        }
+    </style>
+</head>
+<body>
+<!-- Header with blur effect -->
+<header>
+    <nav id="main-nav" aria-label="Primary">
+        <!-- Hamburger toggle (hidden on desktop) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="biology.html" aria-current="page">Biology</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Section Header: title + subtitle -->
+    <section class="section-header container">
+        <h1>Biology of the Amur Leopard</h1>
+        <p>Discover the unique taxonomy, anatomy, and behavior that define this magnificent big cat.</p>
+    </section>
+
+    <!-- Taxonomy “Bleed” Section -->
+    <section id="taxonomy-bleed">
+        <div class="container">
+            <div class="taxonomy-pyramid-card">
+                <h2>Taxonomic Classification</h2>
+                <div class="taxonomy-pyramid">
+                    <div class="pyramid-level" style="--w:100%">Kingdom: Animalia</div>
+                    <div class="pyramid-level" style="--w:90%">Phylum: Chordata</div>
+                    <div class="pyramid-level" style="--w:80%">Class: Mammalia</div>
+                    <div class="pyramid-level" style="--w:70%">Order: Carnivora</div>
+                    <div class="pyramid-level" style="--w:60%">Family: Felidae</div>
+                    <div class="pyramid-level" style="--w:50%">Genus: Panthera</div>
+                    <div class="pyramid-level" style="--w:40%"><em>Species:</em> Panthera pardus</div>
+                    <div class="pyramid-level" style="--w:30%"><em>Subspecies:</em> Panthera pardus orientalis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anatomy & Adaptations -->
+    <section id="anatomy" class="adaptations-section">
+        <div class="container anatomy-card">
+            <div class="anatomy-content">
+                <div class="column-text">
+                    <h2>Anatomy &amp; Adaptations</h2>
+                    <p>
+                        The Amur leopard’s anatomy and behavior are expertly tailored to the harsh,
+                        snowy forests of the Russian Far East and northeastern China. Sporting a dense,
+                        double‐layered coat—up to 7 cm thick in winter—that shifts from fiery golden in
+                        summer to pale cream against snow, it relies on this insulation and its large,
+                        wide paws, which act like natural snowshoes, to glide over deep drifts with minimal
+                        effort.
+                    </p>
+                    <p>
+                        Its long, powerful limbs and muscular shoulders and hindquarters fuel incredible
+                        athleticism: it can sprint at up to 37 mph, clear more than 19 ft in a single
+                        bound, and soar 10 ft vertically when stalking prey. A solitary predator, the Amur
+                        leopard caches unfinished kills to keep them safe from competitors, though males
+                        have been observed lingering after mating—and in rare cases even helping raise
+                        cubs—while other males trail and fight over receptive females.
+                    </p>
+                </div>
+            </div>
+
+            <div class="anatomy-media">
+                <figure class="media-figure">
+                    <a href="../images/anatomy.jpg" target="_blank" rel="noopener">
+                        <img src="../images/anatomy.jpg" alt="Diagram of Amur leopard anatomical features" loading="lazy">
+                    </a>
+                    <figcaption>
+                        <em>Illustration of key anatomical adaptations.</em>
+                        <span>(By Vladimira Strukanova)</span>
+                    </figcaption>
+                </figure>
+
+                <ul class="feature-list media-features">
+                    <li class="feature feature--fur">
+                        <strong>Thick Fur:</strong> Double-layered coat traps air for warmth.
+                    </li>
+                    <li class="feature feature--muscle">
+                        <strong>Muscular Build:</strong> Powerful limbs for leaping and climbing.
+                    </li>
+                    <li class="feature feature--paws">
+                        <strong>Wide Paws:</strong> Act like snowshoes to distribute weight on snow.
+                    </li>
+                    <li class="feature feature--jaw">
+                        <strong>Strong Jaw &amp; Teeth:</strong> Crush bones and take down large prey.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Table with full-width background -->
+    <section id="statistics-bleed">
+        <div class="container">
+            <div class="stats-card">
+                <h2>Key Statistics</h2>
+                <table id="biology-table">
+                    <thead>
+                    <tr>
+                        <th>Characteristic</th>
+                        <th>Male</th>
+                        <th>Female</th>
+                        <th>Notes</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Weight</td>
+                        <td>32–48 kg</td>
+                        <td>25–43 kg</td>
+                        <td>Varies seasonally</td>
+                    </tr>
+                    <tr>
+                        <td>Body Length</td>
+                        <td>107–136 cm</td>
+                        <td>95–123 cm</td>
+                        <td>Excluding tail</td>
+                    </tr>
+                    <tr>
+                        <td>Lifespan</td>
+                        <td>10–15 years</td>
+                        <td>10–15 years</td>
+                        <td>In wild</td>
+                    </tr>
+                    <tr>
+                        <td>Litter Size</td>
+                        <td colspan="3">1–4 cubs per litter</td>
+                    </tr>
+                    <tr>
+                        <td>Tail Length</td>
+                        <td colspan="3">75–90 cm; aids balance on snowy terrain</td>
+                    </tr>
+                    <tr>
+                        <td>Gestation Period</td>
+                        <td colspan="3">90–105 days</td>
+                    </tr>
+                    <tr>
+                        <td>Age at Sexual Maturity</td>
+                        <td colspan="3">2–3 years</td>
+                    </tr>
+                    <tr>
+                        <td>Population Estimate</td>
+                        <td colspan="3">Fewer than 100 mature individuals</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="quiz">
+        <div class="container">
+            <h2>Have a Question?</h2>
+            <p>
+                If you’d like to know more about Amur leopards—or anything else on this site—
+                head over to our Contact page and drop us a line.
+            </p>
+            <a href="contact.html" class="btn">Go to Contact Page</a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer id="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- Branding/About -->
+            <div class="footer-brand">
+                <h3>Amur Leopard Conservation</h3>
+                <p>Dedicated to protecting one of the world’s most endangered big cats.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <nav class="footer-nav">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="biology.html">Biology</a></li>
+                    <li><a href="threats.html">Threats</a></li>
+                    <li><a href="conservation.html">Conservation</a></li>
+                    <li><a href="get-involved.html">Get involved</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social / Contact -->
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <ul>
+                    <li>
+                        <a href="#" aria-label="Facebook">
+                            <img src="../images/facebook.png" alt="" />
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Instagram">
+                            <img src="../images/instagram.png" alt="" />
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Twitter">
+                            <img src="../images/twitter.png" alt="" />
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Amur Leopard Conservation. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
