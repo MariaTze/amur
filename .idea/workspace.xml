@@ -5,47 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83547ce9-e834-460d-a4ae-c5b874dcf9d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/amur.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/anatomy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/attack.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/breeding.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/chill.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/climate-change.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/community.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cub.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/disease.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/face.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/family.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/front.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/fur.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/habitat-loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/inbreeding.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/instagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/jaw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/leaves.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/muscle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/partnerships.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/paws.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/poaching.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/policy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/prey-depletion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/restoration.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/roar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/save.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sleep.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/snow.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/volunteer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/winter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/biology.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/conservation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/get-involved.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/threats.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +16,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MariaTze&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MariaTze/amur.git&quot;,
+    &quot;accountId&quot;: &quot;25697a8f-97fb-48f8-bca1-8a8624831e0a&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2x2GnThsgqm7gi3OgeooOeQce2c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -66,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -100,7 +73,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747128922278</updated>
-      <workItem from="1747128923314" duration="81230000" />
+      <workItem from="1747128923314" duration="81522000" />
+      <workItem from="1747328957190" duration="42000" />
+      <workItem from="1747329316379" duration="998000" />
     </task>
     <servers />
   </component>
